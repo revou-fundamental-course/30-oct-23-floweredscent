@@ -1,3 +1,6 @@
+body{
+    background-color: #F6F4EB;
+}
 #header-bar{
     display: flex;
     justify-content: space-between;
@@ -5,7 +8,7 @@
 
 #title{
     margin-top: 0px;
-    color:#967E76
+    color:#146C94;
 }
 
 .navigation-bar{
@@ -13,6 +16,11 @@
     gap: 20px;
 }
 
+#introduction{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 .input-section{
     display: flex;
     flex-direction: column;
@@ -25,13 +33,34 @@ label{
     margin-bottom: 4px;
     font: size 20px;
     font-weight: bold;
-    color: #D7C0AE;
+    color: #4682A9;
 }
 
 input{
     outline:none;
-    border: solid #D7C0AE;
+    border: solid #19A7CE;
     padding: 10px;
     border-radius: 8px;
+}
 
+.button-section{
+    margin-top: 10px;
+}
+
+button{
+    background-color: #91C8E4;
+    color: black;
+    border:none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #749BC2;
+}
+
+button:active{
+    transform:translateY(4px);
+    background-color:#4682A9 ;
 }

@@ -16,10 +16,15 @@ body{
     gap: 20px;
 }
 
+.navigation-bar>a{
+    text-decoration: none;
+}
+
 #introduction{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 5px;
     font-size: 15px;
 }
 .input-section{

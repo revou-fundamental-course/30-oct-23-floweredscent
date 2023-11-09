@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <title>BMI Calculator</title>
-    </head>
-    <body>
-        <header id="header-bar">
-            <h1 id="title">BMI Calculator</h1>
-            <nav class="navigation-bar">
-                <a href="">Download App</a>
-                <a href="">Contact Us</a>
-            </nav>
-        </header>
-        <p id="introduction">
-                Berat badan ideal adalah impian semua orang. 
-                Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, 
-                berat badan ideal juga menandakan kondisi tubuh yang sehat.
-                Kalkulator ini akan membantu kamu mengetahui apakah berat badanmu dalam kategori ideal
-                atau tidak. 
-                <br>Yuk, hitung sekarang di BMI Calculator.
-        </p>
-        <section class="input-section">
-            <label for="gender-input">Jenis Kelamin</label>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="card">
+      <h1>BMI Calculator</h1>
+      <p id="introduction">
+        Berat badan ideal adalah impian semua orang. 
+        Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, 
+        berat badan ideal juga menandakan kondisi tubuh yang sehat.
+        Kalkulator ini akan membantu kamu mengetahui apakah berat badanmu dalam kategori ideal
+        atau tidak. 
+        <br>Yuk, hitung sekarang di BMI Calculator.
+      </p>
+      <div class="input-container">
+        <div class="input-group">
+          <label for="gender-input">Jenis Kelamin</label>
             <select>
                 <option>Laki-laki</option>
                 <option>Perempuan</option>
             </select>
-            <label for="height-input">Tinggi Badan (cm)</label>
-            <input type="number" id="height-input" placeholder="0">
-            <label for="weight-input">Berat Badan (kg)</label>
-            <input type="number" id="weight-input" placeholder="0">
-            <section class="button-section">
-                <button>Hitung BMI</button>
-                <button>Reset</button>
-            </section>
-        </section>
-    </body>
+        </div>
+        <div class="input-group">
+          <label for="weight">Weight (Kg)</label>
+          <input type="number" id="weight" />
+        </div>
+        <div class="input-group">
+          <label for="height">Height (Cm)</label>
+          <input type="number" id="height" />
+        </div>
+      </div>
+      <button id="calculate">Calculate</button>
+      <div id="result">
+        <span>Hasil BMI:</span>
+        <span id="score"></span>
+        <span id="category"></span>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>

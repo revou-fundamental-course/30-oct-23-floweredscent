@@ -13,7 +13,12 @@ body {
     background-color:#F6F4EB;
     padding: 4em;
 }
-  
+
+p{
+    margin-left:100px;
+    margin-right: 100px;
+}
+
 .card {
     padding: 1em;
     background-color:#F6F4EB
@@ -88,26 +93,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #146C94;
+    color: #4682A9;
+    font-size: 25px;
+    border-style:solid;
+    margin-left: 100px;     
+    margin-right: 100px;
+    background-color: #F6F1F1;
+    height:250px;
+    border-radius: 0.325em;
 }
-  
-#result span {
-    font-size: 20px;
-    font-weight: normal;
-}
-  
+
 #score {
     font-size: 50px;
     font-weight: 800;
 }
 
 #category{
-
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #explanation{
     margin-left: 100px;
     margin-right: 100px;
+    font-size: 16px;
+    font-weight:normal;
     text-align: center;
     color:black;
 }
